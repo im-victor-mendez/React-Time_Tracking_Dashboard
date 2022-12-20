@@ -1,0 +1,10 @@
+.activity {
+    color: white;
+    .activity-data {
+        background-color: var(--dark-blue);
+
+        * {
+            margin: 0rem;
+        }
+    }
+}
