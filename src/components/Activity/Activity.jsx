@@ -52,7 +52,7 @@ function Activity({ title, timeset, timeframes }) {
                     <img src={ICON_ELLIPSIS} alt="" className='activity-options' /*onClick={}*/ />
                 </div>
 
-                <div className='activity-data'>
+                <div className='activity-time'>
                     <h2>{timeframes[timeset].current}hrs</h2>
                     <p>Last Week - {timeframes[timeset].previous}hrs</p>
                 </div>
