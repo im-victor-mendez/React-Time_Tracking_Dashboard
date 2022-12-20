@@ -1,10 +1,50 @@
 .activity {
     color: white;
+
+    /* To fix bottom */
+    .activity-background {
+        border-radius: 1rem 1rem 0rem 0rem;
+        
+        img {
+            position: relative;
+            left: 75%;
+        }
+    }
+
     .activity-data {
         background-color: var(--dark-blue);
 
+        display: grid;
+        gap: 1rem;
+
+        border-radius: 1rem;
+        padding: 1rem;
+
         * {
             margin: 0rem;
+        }
+
+        .activity-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: var(--font-size);
+                font-weight: 400;
+            }
+        }
+
+        .activity-time {
+            h2 {
+                font-size: xx-large;
+                font-weight: 400;
+            }
+
+            p {
+                font-weight: 300;
+                color: var(--pale-blue);
+            }
         }
     }
 }
