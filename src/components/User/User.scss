@@ -1,0 +1,42 @@
+#user {
+    background-color: var(--dark-blue);
+
+    border-radius: 1rem;
+
+    #user-info {
+        background-color: var(--blue);
+        
+        border-radius: 1rem;
+
+        * {
+            margin: 0rem;
+        }
+
+        img {
+            background-color: white;
+
+            border-radius: 100%;
+            padding: 0.2rem;
+        }
+
+        p {
+            color: var(--pale-blue);
+        }
+
+        h1 {
+            color: white;
+        }
+    }
+
+    #time-lapse {
+        li {
+            color: var(--pale-blue);
+
+            list-style: none;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
