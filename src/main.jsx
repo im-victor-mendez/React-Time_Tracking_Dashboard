@@ -4,6 +4,7 @@ import './const/colors.scss'
 import './const/fonts.scss'
 import './main.scss'
 import './styles/Mobile.scss'
+import './styles/Desktop.scss'
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

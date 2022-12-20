@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import './App.scss'
 
-import data from "../data.json";
-
 import User from "./components/User/User";
 import Activity from "./components/Activity/Activity";
 
