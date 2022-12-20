@@ -2,7 +2,7 @@ import React from 'react'
 import './User.scss'
 import JEREMY_IMG from "../../assets/image-jeremy.png";
 
-function User() {
+function User({ handleChange }) {
   return (
     <section id='user'>
         <div id='user-info'>
@@ -16,9 +16,9 @@ function User() {
 
         <div id='time-lapse'>
           {/* To add onClick actions */}
-          <li className='time-lapse'>Daily</li>
-          <li className='time-lapse'>Weekly</li>
-          <li className='time-lapse'>Monthly</li>
+          <li className='time-lapse' onClick={() => handleChange('daily')}>Daily</li>
+          <li className='time-lapse' onClick={() => handleChange('weekly')}>Weekly</li>
+          <li className='time-lapse' onClick={() => handleChange('monthly')}>Monthly</li>
         </div>
     </section>
   )

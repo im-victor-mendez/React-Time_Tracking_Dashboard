@@ -9,6 +9,8 @@ import Activity from "./components/Activity/Activity";
 function App() {
   const [activities, setActivities] = useState([])
   const [timeset, setTimeset] = useState('weekly')
+
+  function handleChange(timeset) { setTimeset(timeset) }
   
   fetch("../data.json")
   .then(res => res.json())
@@ -16,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <User />
+      <User handleChange={handleChange} />
       
       <section id='activities'>
         { activities.map((activity, key) => <Activity key={key} title={activity.title} timeframes={activity.timeframes} timeset={timeset} />) }
