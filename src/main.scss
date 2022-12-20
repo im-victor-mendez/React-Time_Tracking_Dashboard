@@ -1,4 +1,11 @@
 body {
+    background-color: var(--very-dark-blue);
+    
+    min-height: 100vh;
+    min-width: 100vw;
+
     margin: auto;
+
     font-family: var(--font-family);
+    color: white;
 }
