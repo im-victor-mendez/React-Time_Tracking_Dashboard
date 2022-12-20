@@ -39,13 +39,15 @@ function Activity({ title, timeset, timeframes }) {
     const id = title.toLowerCase()
 
     return (
-        <section className='activity' id={id}>
-            <div className='activity-background'
-            style={{ backgroundColor: activity[title].color }}
-            >
-                <img src={activity[title].icon} alt="" />
-            </div>
-
+        <section className='activity' id={id}
+        style={{
+            backgroundColor: activity[title].color,
+            backgroundImage: `url(${activity[title].icon})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: '90% -10%',
+            borderRadius: '1rem'
+        }}
+        >
             <div className='activity-data'>
                 <div className='activity-top'>
                     <h1>{title}</h1>
