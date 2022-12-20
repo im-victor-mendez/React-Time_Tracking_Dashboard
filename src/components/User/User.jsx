@@ -15,10 +15,20 @@ function User({ handleChange }) {
         </div>
 
         <div id='time-lapse'>
-          {/* To add onClick actions */}
-          <li className='time-lapse' onClick={() => handleChange('daily')}>Daily</li>
-          <li className='time-lapse' onClick={() => handleChange('weekly')}>Weekly</li>
-          <li className='time-lapse' onClick={() => handleChange('monthly')}>Monthly</li>
+          <label onClick={() => handleChange('daily')}>
+            Daily
+            <input type="radio" name="time-lapse" id="daily" />
+          </label>
+
+          <label onClick={() => handleChange('weekly')}>
+            Weekly
+            <input type="radio" name="time-lapse" id="weekly" />
+          </label>
+
+          <label onClick={() => handleChange('monthly')}>
+            Monthly
+            <input type="radio" name="time-lapse" id="monthly" />
+          </label>
         </div>
     </section>
   )

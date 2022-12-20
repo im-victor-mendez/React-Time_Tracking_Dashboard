@@ -29,13 +29,16 @@
     }
 
     #time-lapse {
-        li {
+        label {
             color: var(--pale-blue);
 
-            list-style: none;
-
-            &:hover {
+            /* To fix to always stay white */
+            &:hover, &:focus-within {
                 color: white;
+            }
+
+            input {
+                display: none;
             }
         }
     }
