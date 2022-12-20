@@ -35,7 +35,7 @@ const activity = {
     },
 }
 
-function Activity({ title, timeframes }) {
+function Activity({ title, timeset, timeframes }) {
     const id = title.toLowerCase()
 
     return (
@@ -53,8 +53,8 @@ function Activity({ title, timeframes }) {
                 </div>
 
                 <div className='activity-data'>
-                    <h2>{/* Timeframe time */}</h2>
-                    <p>{/* Last "timeframe" - time */}</p>
+                    <h2>{timeframes[timeset].current}hrs</h2>
+                    <p>Last Week - {timeframes[timeset].previous}hrs</p>
                 </div>
             </div>
         </section>
