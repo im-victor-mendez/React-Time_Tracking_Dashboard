@@ -3,16 +3,13 @@ import './App.scss'
 
 import User from "./components/User/User";
 import Activity from "./components/Activity/Activity";
+import data from "./data";
 
 function App() {
-  const [activities, setActivities] = useState([])
+  const [activities, setActivities] = useState(data)
   const [timeset, setTimeset] = useState('weekly')
 
   function handleChange(timeset) { setTimeset(timeset) }
-  
-  fetch("../data.json")
-  .then(res => res.json())
-  .then( data => setActivities(data) )
 
   return (
     <div className="App">
